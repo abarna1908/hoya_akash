@@ -1,0 +1,306 @@
+* { padding: 0; margin: 0; }
+html, body{
+    min-height: 100% !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  font-size: 14px;
+}
+.nav-item{
+  position: relative;
+}
+.nav-link{
+  color: #717375;
+  height: 35px;
+}
+.nav-link br{
+  height:1px
+}
+.nav-link img{
+  width: 60%;
+  height: 5px;
+  padding: 0;
+  margin: 0;
+}
+.hamburger-menu{
+  position: relative
+}
+
+#subHamMenu{
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index:3;
+}
+.hidden{
+  display:none;
+}
+.visible{
+  display: block;
+}
+.hide{
+  visibility: hidden;
+}
+.show{
+  visibility: visible;
+}
+.subMenu{
+  display: none;
+  position: absolute;
+  background: #FFFFFFED 0% 0% no-repeat padding-box;
+  box-shadow: 4px 2px 5px #00000042;
+  border: 1px solid #D0D0CE;
+  z-index: 2;
+  padding: 20px 18px;
+  left: 20%;
+  top: 45px;
+}
+.triangle {
+  position: absolute;
+  bottom: -10px;
+  display: none;
+  left: 50%;
+  box-sizing: border-box;
+  background: #bada55;
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4);
+}
+.triangle::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: -0.5em;
+   
+    box-sizing: border-box;
+    
+    border: 10px solid black;
+    border-color: transparent transparent #fff #fff;
+    
+    transform-origin: 0 0;
+    transform: rotate(135deg);
+    
+    box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.4);
+  }
+
+.subMenupart{
+  width: 140px;
+  text-align: left;
+}
+.subMenupart1{
+  width: 180px;
+  text-align: left;
+}
+.subMenuHeading,.sub-nav{
+  color: #717375;
+  font-size: 12px;
+}
+.subMenuHeading{
+  font-weight: bold;
+
+}
+.sub-nav{
+  padding-top: 8px;
+}
+.nav-item:hover > .subMenu{
+  display: block;
+}
+.nav-item:hover > .triangle{
+  display: block;
+}
+
+.form-inline{
+  box-sizing: border-box;
+  position:relative;
+}
+.form-inline input[type=search] {
+  color: #bbbbbb;
+  height: 31px;
+  padding: 10px;
+}
+.form-inline .form-control::placeholder{
+  color: #bbbbbb;
+}
+/* Style the submit button */
+.form-inline button {
+  float: left;
+  width: 20%;
+  height: 17px;
+  color: #bbbbbb;
+  font-size: 17px;
+  cursor: pointer;
+  border: 0;
+  position:absolute;
+  right: 10px;
+  top: 4px;
+  background-color: #fff;
+}
+
+
+.main-page{
+  background-color: #0057B8;
+  color: #ffffff;
+  position: relative;
+  padding: 80px 20px 20px 40px;
+}
+.heading{
+  position: relative;
+}
+ .heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-page h2{
+  margin: auto;
+  font-size: 44px;
+
+}
+.main-page img{
+  width: 300px;
+height: 300px;
+}
+.main-text{
+  padding:20px 15vw;
+}
+.heading-text{
+  font-size: 16px;
+  
+}
+.desc-text{
+  font-size: 14px;
+}
+.main-text p{
+  text-align: center;
+}
+.intraocular-page{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #0057B8;
+}
+.intraocular-page h2{
+  text-align: right;
+  font-size: 55px;
+  color: #fff;
+  margin-top: 188px;
+}
+.intraocular-page img{
+  width: 300px;
+height: 300px;
+margin-top: 188px;
+}
+.imageCol1{
+  margin-bottom: 80px;
+}
+.imageCol2{
+  margin-top: 80px;
+}
+.imageCol1 img, .imageCol2 img{
+  height: 220px;
+  width: 140px;
+  margin: 40px;
+}
+.footer-text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.footer-text img{
+  width: 23px;
+height: 28px;
+}
+footer{
+  padding:0 20vw 0 20vw;
+  background-color: #f8f9fa;
+}
+footer img{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+
+.mainmenu, .submenu, .subsubmenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+}
+.mainmenu a{
+  font-size: 16px;
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+.submenu li, .mainmenu li, .subsubmenu li{
+  position: relative;
+}
+.submenu li img, .mainmenu li img,  .subsubmenu li img{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  z-index: 5;
+}
+.submenu a{
+  font-size: 14px;
+}
+.subsubmenu a{
+  font-size: 12px;
+  background-color: #ececec;
+  font-weight: lighter;
+}
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a, .submenu a {
+  display: block;
+  background-color: #FFF;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+/* add hover behaviour */
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu, .submenu li:hover .subsubmenu {
+  display: block;
+  max-height: 400px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.subsubmenu a {
+  background-color: rgb(214, 214, 214);
+  border-bottom: 1px solid #fff;
+  padding:10px;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu, .subsubmenu {
+  overflow: hidden;
+  max-height: 0;
+}
+@media only screen and (max-width: 600px) {
+  header{
+    font-size: 24px;
+  
+    padding: 20px;
+  }
+  .main-page{
+    padding: 40px 20px;
+  }
+  .main-page h2{
+margin-top:10%;
+  }
+
+  
+}
